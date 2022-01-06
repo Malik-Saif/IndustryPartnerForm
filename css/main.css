@@ -1,0 +1,242 @@
+/*=======================================================
+                reset default setting
+=======================================================*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* Remove all animations and transitions for people that prefer not to see them */
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  background-color: #fff;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*=======================================================
+                        IndustryPartner
+=======================================================*/
+#IndustryPartner .IndustryPartner-inner-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  height: 100%;
+}
+@media (max-width: 991px) {
+  #IndustryPartner .IndustryPartner-inner-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+#IndustryPartner .content-box {
+  width: 100%;
+  padding: 15px;
+  height: 100%;
+}
+@media (min-width: 992px) {
+  #IndustryPartner .content-box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 45%;
+            flex: 0 0 45%;
+  }
+}
+@media (max-width: 991px) {
+  #IndustryPartner .content-box {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+}
+#IndustryPartner .content-inner-box {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 600px) {
+  #IndustryPartner .content-inner-box {
+    padding: 30px 30px 40px 30px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #IndustryPartner .content-inner-box {
+    padding: 100px;
+  }
+}
+#IndustryPartner .content-inner-box .title {
+  margin: 0 0 15px;
+  font-family: 'norms', sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: 0;
+}
+@media only screen and (max-width: 599px) {
+  #IndustryPartner .content-inner-box .title {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+  #IndustryPartner .content-inner-box .title {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #IndustryPartner .content-inner-box .title {
+    font-size: 2.3rem;
+  }
+}
+#IndustryPartner .content-inner-box .desc {
+  margin-bottom: 15px;
+  font-family: 'norms', sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+}
+#IndustryPartner .form-box {
+  width: 100%;
+  background-image: url("../images/bg-01.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 30px 15px;
+  min-height: 50vh;
+  height: 100%;
+}
+@media (min-width: 992px) {
+  #IndustryPartner .form-box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 55%;
+            flex: 0 0 55%;
+    min-height: 100vh;
+    height: 100%;
+    padding: 15px;
+  }
+}
+#IndustryPartner .form-outer-box {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding-top: 25%;
+}
+@media (max-width: 991px) {
+  #IndustryPartner .form-outer-box {
+    padding-bottom: 15%;
+  }
+}
+#IndustryPartner .form-outer-box .title {
+  margin: 0 0 15px;
+  font-family: 'norms', sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: 0;
+  color: #333;
+}
+@media only screen and (max-width: 767px) {
+  #IndustryPartner .form-outer-box .title {
+    font-size: 1.55rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #IndustryPartner .form-outer-box .title {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #IndustryPartner .form-outer-box .title {
+    font-size: 2rem;
+  }
+}
+#IndustryPartner .form-outer-box .desc {
+  margin-bottom: 15px;
+  font-family: 'norms', sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+}
+#IndustryPartner .form-outer-box .btn-register {
+  display: block;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-weight: 500 !important;
+  font-family: 'norms', sans-serif;
+  font-size: 0.9rem !important;
+  border-style: none;
+  background-color: #05f;
+  color: #fff;
+  border-color: #05f;
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+#IndustryPartner .form-inner-box {
+  background-color: #fff;
+  width: 100%;
+  max-width: 500px;
+  padding: 30px 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
